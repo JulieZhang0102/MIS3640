@@ -26,4 +26,4 @@ print('Time for breakfast is {}:{:.0f}'.format(end_hour, end_min))
 grade1=82
 grade2=89
 percentage=(grade2-grade1)/grade1*100
-print('Percentage is {:.1f}'.format(percentage)+'%')
+print('Percentage is {:04.1f}%'.format(percentage))
