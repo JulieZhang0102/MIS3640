@@ -110,11 +110,14 @@ If n is 5, expected output is:
 """
 
 def print_numbers(n):
-    x = 1
-    while n > 0:
-        print((str(n)+' ')*x)
-        x = x + 1
-        n = n - 1
+    # x = 1
+    # while n > 0:
+    #     print((str(n)+' ')*x)
+    #     x = x + 1
+    #     n = n - 1
+
+    for i in range(n):
+        print((str(n-i)+' ')*(i+1))
     
 
 
