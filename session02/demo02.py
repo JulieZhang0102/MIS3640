@@ -1,6 +1,6 @@
 # print('Hello, world!')
 
-# print('Hey Jude, dont\'t make it bad')
+# print('Hey Jude, don\'t make it bad')
 
 # print('The total number of medals in Rio 2016 is', 46+37+38, '.')
 
@@ -97,15 +97,15 @@
 # print(10 != 2*5)
 # print(3.0-1.0 != 5.0-3.0)
 
-#print(4>5 or 3<4 and 9>8)
+# print(4>5 or 3<4 and 9>8)
 # and > or
 
 # print(not 1)
 # print(not 0)
 
-# print(not 0.000001)
-# print(bool(0))
-# print(bool(0.000001))
-# print(bool('Julie'))
-# print(bool(''))
+print(not 0.000001)
+print(bool(0))
+print(bool(0.000001))
+print(bool('Julie'))
+print(bool(''))
 
