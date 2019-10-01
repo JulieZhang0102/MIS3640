@@ -8,16 +8,16 @@ def sum_uniques(a, b, c):
     """
     Given 3 integers, a b c, return their sum. However, if two numbers are the same, only return the other number. If three numbers are the same, return 0.
     """
-    if a==b==c:
+    if a == b == c:
         return 0
     elif a == b:
         return c
-    elif b==c:
+    elif b == c:
         return a
     elif a == c:
         return b
     else:
-        return a+b+c
+        return a + b + c
 
 
 # When you've completed your function, uncomment the
@@ -43,9 +43,11 @@ def is_special(n):
     If the number, n, is divisible by 4 (for example, 2020), return True. Return False if n is divisible by 100 (for example, 300); 
     the only exception is when n is divisible by 400(for example, 2400), return True.
     """
-    if n%4 == 0:
+    if n % 400 == 0:
         return True
-    elif n%400 == 0:
+    elif n % 100 == 0:
+        return False
+    elif n % 4 == 0:
         return True
     else:
         return False
@@ -78,9 +80,9 @@ def calculate_avg(n):
     Given integer n, return the average of all cubes of all the odd numbers between 1 and n (inclusive).
     """
     result = 0
-    s = 1
-    for i in range(1,n+1,2):
-        result = result + n**3
+    s = 0
+    for i in range(1, n+1, 2):
+        result = result + i**3
         s = s + 1
     return result/s
 
@@ -108,12 +110,11 @@ If n is 5, expected output is:
 """
 
 def print_numbers(n):
-    print(n)
-    a = n-1
     x = 1
-    if a>0:
-        print(str(n-1))*x
-        x = x +1
+    while n > 0:
+        print((str(n)+' ')*x)
+        x = x + 1
+        n = n - 1
     
 
 
