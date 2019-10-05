@@ -188,24 +188,23 @@
 # print(find_abecedarian_words())
 
 
-def is_abecedarian_using_recursion(word):
-    """
-    returns True if the letters in a word appear in alphabetical order
-    (double letters are ok).
-    """
-    n = len(word)
-    if n >= 2:
-        if word[n-1] < word[n-2]:
-            return False
-        else:
-            word = word[:n-1]
-            return is_abecedarian_using_recursion(word)
-    else:
-        return True
+# def is_abecedarian_using_recursion(word):
+#     """
+#     returns True if the letters in a word appear in alphabetical order
+#     (double letters are ok).
+#     """
+#     n = len(word)
+#     if n >= 2:
+#         if word[n-1] < word[n-2]:
+#             return False
+#         else:
+#             word = word[:n-1]
+#             return is_abecedarian_using_recursion(word)
+#     else:
+#         return True
 
-print(is_abecedarian_using_recursion('baaa'))
-# team = 'team'
-# print(team[0:4])
+# print(is_abecedarian_using_recursion('baaa'))
+
 
 # def is_abecedarian_using_while(word):
 #     """
@@ -221,4 +220,27 @@ print(is_abecedarian_using_recursion('baaa'))
 #     return True
 
 
-# Exercise 3
+# Exercise 3.1
+
+# def is_word_triple(word):
+#     count = 0
+#     n = len(word)
+#     while n >=2:
+#         if word[n-1] == word[n-2]:
+#             n -= 2
+#             count += 1
+#             if count == 3:
+#                 return True
+#         else:
+#             n -= 1
+#             count = 0
+#     return False
+
+# def check_list_triple():
+#     f = open('session09/words.txt')
+#     for line in f:
+#         word = line.strip()
+#         if is_word_triple(word):
+#             print(word)
+
+# check_list_triple()
