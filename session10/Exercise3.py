@@ -44,9 +44,7 @@ def middle(t):
     >>> middle(t)
     [2, 3]
     """
-    t.pop(0)
-    t.pop()
-    return t
+    return t[1:-1]
 # t = [1, 2, 3, 4]
 # print(middle(t))
 
@@ -76,10 +74,8 @@ def is_sorted(t):
     >>> is_sorted(['b', 'a'])
     False
     """
-    if t == sorted(t):
-        return True
-    else:
-        return False
+    return t == sorted(t)
+
 # print(is_sorted([1, 2, 2]))
 # print(is_sorted(['b', 'a']))
 
@@ -96,12 +92,9 @@ def is_anagram(word1, word2):
     >>> is_anagram('different', 'letters')
     False
     >>> is_anagram([1, 2, 2], [2, 1, 2])
-    False
+    True
     """
-    if word1 == word2[::-1]:
-        return True
-    else:
-        return False
+    return sorted(word1) == sorted(word2)
 # print(is_anagram('stop', 'pots'))
 # print(is_anagram('different', 'letters'))
 # print(is_anagram([1, 2, 2], [2, 1, 2]))
