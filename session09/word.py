@@ -244,3 +244,6 @@
 #             print(word)
 
 # check_list_triple()
+
+# word = "Julie"
+# print('le' not in word)
