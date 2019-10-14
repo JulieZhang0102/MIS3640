@@ -103,9 +103,8 @@
 # print(not 1)
 # print(not 0)
 
-print(not 0.000001)
-print(bool(0))
-print(bool(0.000001))
-print(bool('Julie'))
-print(bool(''))
-
+# print(not 0.000001)
+# print(bool(0))
+# print(bool(0.000001))
+# print(bool('Julie'))
+# print(bool(''))
