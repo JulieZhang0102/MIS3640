@@ -9,8 +9,7 @@ def nested_sum(t):
     """
     total = 0
     for x in t:
-        for number in x:
-            total = number + total
+        total = sum(x) + total
     return total
 
 # t = [[1, 2], [3], [4, 5, 6]]
