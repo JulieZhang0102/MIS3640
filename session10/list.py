@@ -27,8 +27,10 @@
 
 # x = [0] * 4
 # print(x)
+# # Add as a whole
 # x.append(3)
 # print(x)
+# # Add as speprate
 # x.extend('369')
 # print(x)
 # x.reverse()
@@ -49,7 +51,7 @@
 # names = ['Julie', 'Rachel', 'Julia']
 # names.append(boys)
 # print(names)
-# # sppend consider as one item, extend consider as few items
+# sppend consider as one item, extend consider as few items
 
 # def capitalized_all(t):
 #     result = []
@@ -113,7 +115,7 @@
 
 # b[0] = 'something else'
 # print(a)
-# a will change as well
+# #a will change as well
 
 # 3 ways to add element to list
 # t.append(x)
