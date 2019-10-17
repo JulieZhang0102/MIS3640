@@ -145,7 +145,8 @@ def get_current_temp():
     response_text = f.read().decode('utf-8')
     response_data = json.loads(response_text)
     current_tem = response_data['main']['temp']
-    return current_tem
+    current_tem_f = current_tem *9/5-459.67
+    return current_tem_f
 
 
 # When you've completed your function, uncomment the
