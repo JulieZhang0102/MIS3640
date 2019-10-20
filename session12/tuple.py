@@ -103,16 +103,17 @@
 # names = set(name)
 # print(names)
 
-name = 'Julie'
-t = [1,2,3,4,5]
-zip(name, t)
+# name = 'Julie'
+# t = [1,2,3,4,5]
+# zip(name, t)
 
-for pair in zip(name,t):
-    print(pair)
+# for pair in zip(name,t):
+#     print(pair)
 
-print(list(zip(name,t)))
+# print(list(zip(name,t)))
 
-print(dict(zip(name, t)))
+# print(dict(zip(name, t)))
 
-x = dict(zip(name, t))
-print(x.items())
+# x = dict(zip(name, t))
+# print(x.items())
+ 
