@@ -11,7 +11,7 @@
 # # If you don’t close the file, 
 # # it gets closed for you when the program ends.
 
-# import os.path
+import os.path
 
 # def sed(pattern, replace, source, dest):
 #     """
@@ -22,16 +22,13 @@
 #     source: string filename
 #     dest: string filename
 #     """
-#     content = open(source)
 #     fout = open(dest, 'w')
-#     for line in content:
-#         if pattern in line:
-#             a = line.replace(pattern, replace)
-#             fout.write(a)
-#         else:
-#             fout.write(line)
-
-# sed('Jude', 'Julie', 'session14/test.txt', 'session14/result.txt')
+#     with open(source, 'r') as content:
+#         for line in content:
+#             new_line = line.replace(pattern, replace)
+#             fout.write(new_line)
+    
+# sed('Jude', 'Julia', 'session14/test.txt', 'session14/result.txt')
 
 
 # import os
@@ -60,6 +57,8 @@
 #         else:
 #             walk(path)
 
+# walk(os.getcwd())
+
 # def walk2(dirname):
 #     """Prints the names of all files in 
 #     dirname and its subdirectories.
@@ -81,6 +80,9 @@
 # import pickle
 # t = [1, 2, 3]
 # print(pickle.dumps(t))
+
+# with open('session14/saved.p','wb') as p:
+#     pickle.dump(t, p)
 
 # t1 = [1, 2, 3]
 # s = pickle.dumps(t1)
