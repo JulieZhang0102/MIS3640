@@ -270,6 +270,7 @@ def mul_time(t1, factor):
 # print_time(mul_time(duration, 5))
 
 
+
 # def main():
 #     # if a movie starts at noon...
 #     noon_time = Time()
