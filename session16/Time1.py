@@ -135,20 +135,20 @@ def increment_2(time, seconds):
     
     result.second += seconds
 
-    if time.second >= 60:
-        time.second -= 60
-        time.minute += 1
+    if result.second >= 60:
+        result.second -= 60
+        result.minute += 1
 
-    if time.minute >= 60:
-        time.minute -= 60
-        time.hour += 1
+    if result.minute >= 60:
+        result.minute -= 60
+        result.hour += 1
 
     return result
 
 
-# print_time(time)
-# incremented_time = increment_2(time, 50)
-# print_time(incremented_time)
+print_time(time)
+incremented_time = increment_2(time, 50)
+print_time(incremented_time)
 
 """"""""""""""""""""""""""""""""""""
 # Designed Development
