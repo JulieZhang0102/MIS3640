@@ -42,20 +42,24 @@ class Candidate:
         name: string
         winning_states: a list of strings representing initial winning state(s).
         """
-        votes = 0
         self.name = name
-        self.winning_states = winning_states
-        self.votes = votes
+        self.votes = 0
+
+        if winning_states is None:
+            self.winning_states = []
+        else:
+            self.winning_states = winning_states
+            for state in winning_states:
+                self.votes += ELECTORS[state]
 
     def __str__(self):
         """Return a string representation of this candidate,
         including name and winning state(s).
         """
-        if self.winning_states == []:
-            return f'{self.name} has not won any state yet.'
+        if self.winning_states:
+            return f'{self.name} has won {", ".join(self.winning_states)}.'
         else:
-            result = ', '.join(self.winning_states)
-            return f'{self.name} has won {result}.'
+            return f'{self.name} has not won any state yet.'
 
     
     def win_state(self, state):
@@ -63,8 +67,9 @@ class Candidate:
 
         state: a string of state abbreviation
         """
-        self.winning_states.append(state)
-        self.votes = self.votes + ELECTORS[state]
+        if state not in self.winning_states:
+            self.winning_states.append(state)
+            self.votes += ELECTORS.get(state, 0)
     
     def __gt__(self, other):
         return self.votes > other.votes
