@@ -1,0 +1,1 @@
+Your code hooks the change event on select elements that exist as of when that code runs. So you need to be sure they exist prior to running that code. You can do that by ensuring your script tag is at the end of the doc
